@@ -2617,20 +2617,28 @@ html .ui-button.ui-state-disabled:active {
     align-items: center;
 }
 
+.ui-accordion .ui-accordion-content.stopper {
+    padding: 30px 0;
+}
+
 .stopper__back-cont {
+    flex-shrink: 0;
     border: 1px solid rgba(183, 183, 183, 1);
     padding: 10px;
     max-width: 275px;
     max-height: 190px;
+    min-height: 190px;
     width: 100%;
     height: 100%;
     margin-right: 25px;
 }
 
 .stopper__back {
+    flex-shrink: 0;
     background-color: rgba(183, 183, 183, 1);
     max-width: 250px;
     max-height: 165px;
+    min-height: 165px;
     width: 100%;
     height: 100%;
 }
@@ -3987,11 +3995,13 @@ html .ui-button.ui-state-disabled:active {
         padding: 5px;
         max-width: 180px;
         max-height: 121px;
+        min-height: 121px;
     }
 
     .stopper__back {
         max-width: 173px;
         max-height: 114px;
+        min-height: 114px;
     }
 
     /* _______________________________________ catalog ___________________________ */
@@ -5290,11 +5300,13 @@ html .ui-button.ui-state-disabled:active {
     .stopper__back-cont {
         max-width: 90px;
         max-height: 130px;
+        min-height: 130px;
     }
 
     .stopper__back {
         max-width: 79px;
         max-height: 118px;
+        min-height: 118px;
     }
 
     .stopper__h3 {
