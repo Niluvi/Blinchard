@@ -5265,7 +5265,7 @@ html .ui-button.ui-state-disabled:active {
     /* --- */
     .catalog__description {
         max-width: 530px;
-        min-width: 310px;
+        min-width: auto;
         width: 100%;
         margin-right: 0;
     }
