@@ -4353,7 +4353,7 @@ html .ui-button.ui-state-disabled:active {
         display: inline-flex;
     }
 
-    .header__button-burger {
+    header--button-burger {
         display: block;
         font-size: var(--font-size-14);
         font-weight: 400;
@@ -5012,7 +5012,7 @@ html .ui-button.ui-state-disabled:active {
         width: 20px;
     }
 
-    .header__button-burger {
+    .header--button-burger {
         max-width: 140px;
         padding: 15px 32px;
     }
