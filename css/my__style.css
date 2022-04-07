@@ -5316,6 +5316,7 @@ html .ui-button.ui-state-disabled:active {
     /* _________- event -__________ */
     .event__swiper {
         padding-right: 0;
+        padding-left: 0;
     }
 
     .event__h2 {
