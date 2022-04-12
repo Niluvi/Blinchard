@@ -4286,7 +4286,7 @@ html .ui-button.ui-state-disabled:active {
         transform: translateX(-101px);
         background-color: rgba(0, 0, 0, 0.9);
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         padding: 35px 48px;
         padding-bottom: 50px;
         -webkit-transform: translateX(-101%);
