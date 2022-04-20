@@ -1,0 +1,645 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>HTML Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Стили только в head -->
+    <style type="text/css">
+        body {
+            width: 100% !important;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        [style*="Open Sans"] {
+            font-family: 'Open Sans', arial, sans-serif !important;
+        }
+
+        [style*="Arial"] {
+            font-family: 'Arial', Helvetica, sans-serif !important;
+        }
+
+        [style*="Verdana"] {
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif !important;
+        }
+
+        img {
+            outline: none;
+            text-decoration: none;
+            border: none;
+            -ms-interpolation-mode: bicubic;
+            max-width: 100% !important;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        .head-image-2 {
+            display: none;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ____________ */
+        .pt-pb-30 {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .pr-pl-40 {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        .pt-30 {
+            padding-top: 30px;
+        }
+
+        .pb-30 {
+            padding-bottom: 30px;
+        }
+
+        .pb-20 {
+            padding-bottom: 20px;
+        }
+
+        .pb-13 {
+            padding-bottom: 13px;
+        }
+
+        .font-20 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .font-16 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .lh-18 {
+            line-height: 18;
+        }
+
+        .font-12 {
+            font-size: 12px;
+            line-height: 24px;
+        }
+
+        .font {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .color-w {
+            color: #ffffff;
+        }
+
+        .color-b {
+            color: #000000;
+        }
+
+        .link {
+            font-size: 14px;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            display: block;
+            background-color: #9D5CD0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 240px;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+
+        /* ___ media ___ */
+
+        @media (max-width: 620px) {
+            .table-600 {
+                width: 280px !important;
+            }
+
+            .table-520,
+            .table-500 {
+                width: 244px !important;
+            }
+
+            .logo-td {
+                padding-top: 17px;
+                padding-bottom: 17px;
+            }
+
+            .logo {
+                width: 115px !important;
+                height: 25px !important;
+            }
+
+            .logo-600 {
+                padding-bottom: 18px !important;
+            }
+
+            .img-head {
+                width: 280px !important;
+            }
+
+            .head-image-1 {
+                display: none;
+            }
+
+            .head-image-2 {
+                display: block;
+            }
+
+            .text-feast-2 {
+                padding-bottom: 33px !important;
+            }
+
+            /*  */
+            .picture__artist {
+                padding-bottom: 10px !important;
+            }
+
+            .text__descr {
+                width: 240px !important;
+            }
+
+            /*  */
+
+            .img__message {
+                width: 245px !important;
+                height: 85px !important;
+            }
+
+            .details-600 {
+                display: block !important;
+                width: 244px !important;
+            }
+
+            .height-auto {
+                height: auto !important;
+            }
+
+            .pb-4_620 {
+                padding-bottom: 4px !important;
+            }
+
+            .pb-11_620 {
+                padding-bottom: 11px !important;
+            }
+
+            .pb-12_620 {
+                padding-bottom: 12px !important;
+            }
+
+            .pb-23_620 {
+                padding-bottom: 23px !important;
+            }
+
+            .pt-23_620 {
+                padding-top: 23px !important;
+            }
+
+            /* ___ end-media ___ */
+        }
+
+        /* ___ end ___ */
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <!-- Первый див для оповещения, сообщения -->
+    <!-- Для тегов <br /> и <img /> нужен закрывающий / -->
+    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Приглашение
+        в художественную галерею</div>
+    <!-- Письмо бишится только в TABLE, а стили желательно инлайн в тегах и полностью (padding-top.. и тд)!!!! -->
+    <!-- Использовать <!importand> можно и нужно -->
+    <!-- Картенки должны быть загружены на сервер хостинга -->
+    <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" align="center">
+        <!-- ___ row ___ 1-->
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600px" bgcolor="#000000">
+                    <tr>
+                        <td align="center" class="logo-600 table-520 pt-30 logo-td" width="520px"
+                            style="padding-bottom: 28px;">
+                            <img src="/img/Лого.png" class="logo" alt="Logo">
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- ___ -->
+        <!-- ___ row ___ 2-->
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600px" bgcolor="#000000">
+                    <tr>
+                        <td align="center" class="head-image-1">
+                            <img src="/img/Rectangle 6.png" alt="picture" class="img-head" width="600px" height="300px">
+                        </td>
+                        <td align="center" class="head-image-2">
+                            <img src="/img/Rectangle 6(2).png" alt="picture" class="img-head" width="600px"
+                                height="300px">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- ___ -->
+        <!-- ___ row ___ 3-->
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600px" bgcolor="#ffffff">
+                    <tr>
+                        <td align="center">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520px" bgcolor="#ffffff">
+                                <tr>
+                                    <td class="pb-13" style="padding-top: 32px;">
+                                        <h1 class="font  font-20">Торжество импрессионизма</h1>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td style="padding-bottom: 10px;">
+                                        <p class="font font-12">
+                                            Опыт говорит нам, что семантический разбор внешних противодействий требует
+                                            анализа новых принципов формирования материально-технической и&nbsp;кадровой
+                                            базы.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td style="padding-bottom: 38px;" class="text-feast-2">
+                                        <p class="font font-12">
+                                            Задача организации, в&nbsp;особенности&nbsp;же внедрение современных
+                                            методик, в&nbsp;своём
+                                            классическом представлении, допускает внедрение глубокомысленных
+                                            рассуждений. Есть над чем задуматься: элементы политического процесса
+                                            преданы социально-демократической анафеме! Но&nbsp;интерактивные прототипы
+                                            заблокированы в рамках своих собственных рациональных ограничений.
+                                            Сторонники тоталитаризма в&nbsp;науке ограничены исключительно образом
+                                            мышления.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- ___ -->
+        <!-- ___ row ___ 4-->
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600px" bgcolor="000000">
+                    <tr>
+                        <td align="center">
+                            <!-- tb-1 -->
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520px">
+                                <tr>
+                                    <td>
+                                        <h2 class="font font-16 color-w"
+                                            style="padding-top: 20px; padding-bottom: 20px; font-weight: 400;">
+                                            Представленные художники</h2>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td class="picture__artist" style="padding-bottom: 21px;">
+                                        <img class="img__message" src="/img/img__1.png" alt="Pol Gogen" width="520px"
+                                            height="180px">
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <h3 class="font font-12 color-w" style="font-weight: 700;">
+                                            Поль Гоген
+                                        </h3>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <p class="font font-12 pb-20 color-w" style=" line-height: 18px;">
+                                            Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в
+                                            значительной степени обусловливает важность укрепления моральных ценностей.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- ___ -->
+                            <!-- tb-2 -->
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520px">
+                                <tr>
+                                    <td class="picture__artist" style="padding-bottom: 22px;">
+                                        <img class="img__message" src="/img/img__2.png" alt="Огюст Ренуар" width="520px"
+                                            height="180px">
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <h3 class="pb-4_620 font font-12 color-w" style="font-weight: 700;">
+                                            Огюст Ренуар
+                                        </h3>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <p class="text__descr font font-12 pb-20 color-w" style="line-height: 18px;">
+                                            А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно
+                                            интересные особенности картины в целом.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- tb-3 -->
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520px">
+                                <tr>
+                                    <td class="picture__artist" style="padding-bottom: 22px;">
+                                        <img class="img__message" src="/img/img__3.png" alt="Клод Моне" width="520px"
+                                            height="180px">
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <h3 class="font font-12 color-w" style="font-weight: 700;">
+                                            Клод Моне
+                                        </h3>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <p class="font font-12 pb-20 color-w" style="line-height: 18px;">
+                                            Современная методология разработки однозначно фиксирует необходимость
+                                            системы массового участия.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- tb-4 -->
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520px">
+                                <tr>
+                                    <td class="picture__artist" style="padding-bottom: 22px;">
+                                        <img class="img__message" src="/img/img__4.png" alt="Эдуард Мане" width="520px"
+                                            height="180px">
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <h3 class="pb-11_620 font font-12 color-w" style="font-weight: 700;">
+                                            Эдуард Мане
+                                        </h3>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <p class="font font-12 pb-20 color-w" style="line-height: 18px;">
+                                            Но социально-экономическое развитие является качественно новой ступенью
+                                            вывода текущих активов.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- tb-5 -->
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520px">
+                                <tr>
+                                    <td class="picture__artist" style="padding-bottom: 22px;">
+                                        <img class="img__message" src="/img/img__5.png" alt="Винсент Ван Гог"
+                                            width="520px" height="180px">
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td>
+                                        <h3 class="pb-11_620 font font-12 color-w" style="font-weight: 700;">
+                                            Винсент Ван Гог
+                                        </h3>
+                                    </td>
+                                </tr>
+                                <!--  -->
+                                <tr>
+                                    <td style="padding-bottom: 26px;">
+                                        <p class="font font-12 color-w" style="line-height: 18px;">
+                                            Повседневная практика показывает, что разбавленное изрядной долей эмпатии,
+                                            рациональное мышление требует анализа поставленных обществом задач.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- ___ -->
+        <!-- ___ row ___ 5-->
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600px" bgcolor="#ffffff">
+                    <tr>
+                        <td align="center">
+                            <table class="table-520" cellpadding="0" cellspacing="0" width="520px" bgcolor="#ffffff">
+                                <tr>
+                                    <td class="font font-16 pt-30" style="padding-bottom: 8px;">
+                                        <p>И это ещё не всё!</p>
+                                    </td>
+                                </tr>
+                                <!-- ____ -->
+                                <tr>
+                                    <td>
+                                        <!-- table-500 -->
+                                        <table class="table-500" width="503px" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <!-- /// 1 -->
+                                                <td width="140px" class="pb-23_620 details-600 pb-20"
+                                                    style="padding-right: 13px; padding-bottom: 10px;">
+                                                    <table cellpadding="0" cellspacing="0" width="140px">
+                                                        <tr>
+                                                            <td width="35px" class="pb-12_620" height="35px"
+                                                                style="padding-bottom: 7px;">
+                                                                <img src="img/details-img-1.png" alt="img">
+                                                            </td>
+                                                        </tr>
+                                                        <!--  -->
+                                                        <tr>
+                                                            <td class="height-auto" height="66px">
+                                                                <p style="font-size: 12px; line-height: 18px;"
+                                                                    class="font details-600">
+                                                                    Уникальные подборки работ с&nbsp;авторскими
+                                                                    рецензиями
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- /// 2 -->
+                                                <td width="140px" class="pb-23_620 details-600"
+                                                    style="padding-right: 30px; padding-bottom: 10px;">
+                                                    <table cellpadding="0" cellspacing="0" width="140px">
+                                                        <tr>
+                                                            <td width="35px" class="pb-12_620" height="35px"
+                                                                style="padding-bottom: 7px;">
+                                                                <img src="img/details-img-2.png" alt="img">
+                                                            </td>
+                                                        </tr>
+                                                        <!--  -->
+                                                        <tr>
+                                                            <td class="height-auto" height="66px">
+                                                                <p style=" font-size: 12px; line-height: 18px;"
+                                                                    class="font details-600">
+                                                                    Возможность настроить нашу рассылку под свой личный
+                                                                    вкус
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- /// 3 -->
+                                                <td width="140px" class="pb-23_620 details-600">
+                                                    <table cellpadding="0" cellspacing="0" width="140px">
+                                                        <tr>
+                                                            <td width="35px" class="pb-12_620" height="35px"
+                                                                style="padding-bottom: 12px;">
+                                                                <img src="img/details-img-3.png" alt="img">
+                                                            </td>
+                                                        </tr>
+                                                        <!--  -->
+                                                        <tr>
+                                                            <td class="height-auto" height="66px">
+                                                                <p style="font-size: 12px; line-height: 18px;"
+                                                                    class="font details-600">
+                                                                    У&nbsp;вас есть пожелания и предложения?
+                                                                    Напишите нам в&nbsp;ответ на&nbsp;это письмо!
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- ///_ -->
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- ____ -->
+                                <!-- button -->
+                                <tr>
+                                    <td align="center" class="pt-23_620"
+                                        style="padding-top: 32px; padding-bottom: 32px;">
+                                        <table cellpadding="0" cellspacing="0" class="table-240" width="240px">
+                                            <tr>
+                                                <td align="center">
+                                                    <a href="#" class="link font">Узнать все подробности</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- ___ -->
+        <!-- ___ row ___ -->
+        <tr>
+            <td>
+                <table align="center" class="table-600" cellpadding="0" cellspacing="0" width="600px" bgcolor="#000000">
+                    <tr>
+                        <td align="center" style="padding-top: 15px; padding-bottom: 10px;">
+                            <table class="table-247" cellpadding="0" cellspacing="0" width="247px" bgcolor="#000000">
+                                <tr>
+                                    <td align="center" style="padding-top: 12px; padding-bottom: 12px;">
+                                        <table class="table-143" width="144px" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <!-- mess-1 -->
+                                                <td style="padding-right: 17px;">
+                                                    <img width="35px" height="35px" src="img/footer-img-1.png"
+                                                        alt="img">
+                                                </td>
+                                                <!-- mess-2 -->
+                                                <td style="padding-right: 17px;">
+                                                    <img width="35px" height="35px" src="img/footer-img-2.png"
+                                                        alt="img">
+                                                </td>
+                                                <!-- mess-3 -->
+                                                <td>
+                                                    <img width="35px" height="35px" src="img/footer-img-3.png"
+                                                        alt="img">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- footer__text -->
+                                <tr>
+                                    <td align="center">
+                                        <p class="font" style="color: #757575; font-size: 12px;">
+                                            Blanchard &copy;&nbsp;2020&nbsp;/ Все права защищены
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!-- end -->
+        <tr>
+            <td align="center" style="padding-top: 2px; padding-bottom: 5px;">
+                <table class="table-247" cellpadding="0" cellspacing="0" width="247px" bgcolor="#ffffff">
+                    <p class="font" style="font-size: 10px;">
+                        Вы можете так же <a href="#" style="text-decoration: underline; color: #9D5CD0;"> отписаться от
+                            рассылки </a>
+                    </p>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
